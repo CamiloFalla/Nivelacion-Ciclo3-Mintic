@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>
+            <h1>Información de Servicio a Cargar</h1>
+        </title>
+    </head>
+    <body>
+        <h1 style="background-color:rgb(33, 149, 202); color:bisque;text-align:center">IPS Sherman</h1>
+        {% include "superior/Barra.html" %}
+        <h3>Información de Servicio a Cargar</h3>
+
+        {% if form.errors %}
+
+        <p style="color: red;">Por favor validar este campo</p>
+
+        {% endif %}
+
+        <form action="/servicio/" method="POST">{% csrf_token %}
+            <table>
+                {{ form.as_table}}
+            </table>
+            <input type="submit" value="Cargar">
+        </form>
+
+        <p style="background-color:rgb(33, 149, 202); color:bisque;text-align:right">Desarrollado por Camilo Falla y Brayan Rojas Mintic 2022 </p>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Solicitud de creación de entidad de salud EPS</title>
+    </head>
+
+    <body>
+        <h1>CREACIÓN DE ENTIDAD PRESTADORA DE SALUD</h1>
+        <form action="/entidad/" method="POST">{% csrf_token %}
+            <P>NOMBRE ENTIDAD <input type="text" name="EPSnombre"></P>
+            <P>VALOR INGRESO MENSUAL <input type="text" name="EPSvalor"></P>
+            <P>NIT <input type="text" name="EPSnit"></P>
+            <P>FECHA DE CREACION <input type="date" name="EPSfecha"></P>
+            <P>CIUDAD SEDE PRINCIPAL <input type="text" name="EPSciudad"></P>
+            <P>DIRECCIÓN SEDE PRINCIPAL <input type="text" name="EPSdireccion"></P>
+            <P>TELEFONO PRINCIPAL <input type="text" name="EPStelefono"></P>
+            <input type="submit" value="Cargar">
+        </form>
+
+    </body>
+</html>

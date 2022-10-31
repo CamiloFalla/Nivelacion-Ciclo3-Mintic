@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>
+            {% block title %}{% endblock %}
+        </title>
+    </head>
+    <body>
+        <h1 style="background-color:rgb(33, 149, 202); color:bisque;text-align:center">IPS Sherman</h1>
+        {% include "superior/Barra.html" %}
+        <h3>Proyecto para Mintic grupo 24, conexion django supabase</h3>
+        {% block content %}
+
+        {% endblock %}
+
+        <p style="background-color:rgb(33, 149, 202); color:bisque;text-align:right">Desarrollado por Camilo Falla y Brayan Rojas Mintic 2022 </p>
+    </body>
+</html>
